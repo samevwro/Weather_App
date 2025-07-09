@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react"
+import { AlertData } from "./AlertData"
 
 
 type WeatherAlertType = {
@@ -55,25 +56,10 @@ export function UsWeatherAlert({ LocationList, selectedLocation }: WeatherAlertT
     const AlertLocationList: any = WeatherAlertData.map((area: any, index: number) => {
         return <option className="OptionWidth" value={index} key={index}>{area.areaDescription.substring(0, 100)}</option>
     })
-    //this function creates the elements and populates them with the different information
-    //from the api and checks if its loaded before displaying
-    const AlertData = () => {
-        if(WeatherAlertData.length != 0){
-             return (
-            <div>
-                <h5 style={{margin: "10px"}}>{WeatherAlertData[selLocation].headline}</h5>
-                <h5 style={{margin: "10px"}}>Urgency: {WeatherAlertData[selLocation].urgency}</h5>
-                <div className="InfoBorder" style={{margin: "6px"}}><p style={{margin: "10px"}} >{WeatherAlertData[selLocation].alertDescription}</p></div>
-                
-                <p style={{margin: "10px"}}><b>Safety Instructions:  </b>{WeatherAlertData[selLocation].safetyInstructions != null? WeatherAlertData[selLocation].safetyInstructions: "Warning No Longer Issued"}</p>
-            </div>
-        )}else{return <h3>Loading...</h3>}
-       
-    }
+  
     const ChangeLocation = (id: number) => {
         setSelLocation(id)
     }
-
 
     return (<>
         <div style={{ margin: "10px" }} className="d-flex">
@@ -82,7 +68,7 @@ export function UsWeatherAlert({ LocationList, selectedLocation }: WeatherAlertT
                 {AlertLocationList}
             </select>
         </div>
-        {AlertData()}
+        <AlertData WeatherAlertData={WeatherAlertData} selLocation={selLocation}/>
     </>
     )
 }
