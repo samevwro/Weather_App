@@ -1,0 +1,56 @@
+#ToolBar{
+  height: 10%;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+#MainTable{
+  position: absolute;
+  top: 10%;
+  left: 0;
+  height: 90%;
+  align-items: start;
+  width: 100%;
+}
+.Locations{
+  border: 3px;
+  border-radius: 5px;
+  background-color:rgb(39, 83, 229);
+  color: aliceblue;
+  width: fit-content;
+  max-width: 200px;
+  height: 35px;
+  margin: 5px;
+}
+.OptionWidth{
+  max-width: 300px;
+  word-wrap: break-word
+}
+#LocationsLabel{
+  color: aliceblue;
+}
+.active {
+  color: darkblue;
+  font-weight: bold;
+}
+#DynamicTable { 
+  border-radius: 30px;
+  border: 2px solid black;
+  width: 80%;
+  
+}
+th, td{
+  border: 2px solid black
+}
+#AddressInput{
+  width: 350px;
+  height: 35px
+}
+.InfoBorder{
+  border: 2px solid black;
+  background-color: rgb(215, 215, 215);
+}
+.chart{
+  margin-left: auto;
+  margin-right: auto;
+}

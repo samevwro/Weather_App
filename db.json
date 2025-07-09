@@ -1,0 +1,34 @@
+{
+  "locations": [
+    {
+      "id": "0",
+      "city": "Littleton",
+      "state": "CO",
+      "zip": "80127",
+      "country": "US",
+      "longitude": "-105.016647",
+      "latitude": "39.613319",
+      "isStared": true
+    },
+    {
+      "id": "1",
+      "city": "Manhattan",
+      "state": "NY",
+      "zip": "10036",
+      "country": "US",
+      "longitude": "-73.96967",
+      "latitude": "40.77798",
+      "isStared": false
+    },
+    {
+      "id": "2",
+      "city": "Monahans",
+      "state": "TX",
+      "zip": "79756",
+      "country": "US",
+      "longitude": "-102.90057687061221",
+      "latitude": "31.585098249820486",
+      "isStared": false
+    }
+  ]
+}
