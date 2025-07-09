@@ -22,7 +22,7 @@ type ToolBarTypes = {
 
 
 export function ToolBar({ favoriteLocation, DeleteButton, selectedLocation, handleInput, LocationList, SubmitButton, ChangeSelLocation, handleChange }: ToolBarTypes) {
-   //This is where the google auto complete search bar is0
+   //This is where the google auto complete search bar function is
    const inputref = useRef<any>(null)
     const { isLoaded } = useJsApiLoader({
         id: 'google-map-script',

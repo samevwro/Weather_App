@@ -61,7 +61,7 @@ export function AirQuality({ LocationList, selectedLocation }: AirQualityTypes) 
         }
         AirQualityApi()
     }, [LocationCoordinates])
-
+//this function formates the data into an array to be passed into my chart component
     const ifAirDataReady = () => {
         console.log(AirQualityData)
         if (AirQualityData.length !== 0) {

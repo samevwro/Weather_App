@@ -6,7 +6,7 @@ import { useEffect, useState, type ChangeEvent } from 'react'
 import { AirQuality } from './AirQuality'
 import { ToolBar } from './ToolBar'
 import { UsWeatherAlert } from './USWeatherAlert'
-
+//types declared 
 export type LocationData = {
   id: number
   zip: string
